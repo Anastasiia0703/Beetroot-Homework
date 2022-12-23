@@ -1,0 +1,468 @@
+{
+  "id": "bae8fd7b-7761-404d-bd5a-57274d0cc6a2",
+  "version": "2.0",
+  "name": "Anastasiia Homework",
+  "url": "https://todomvc.com/examples/angularjs/#/",
+  "tests": [{
+    "id": "b5da295a-36e4-4950-a95e-8f242c64b20b",
+    "name": "1. Create To Do list",
+    "commands": [{
+      "id": "3bf39f42-ee7c-4eaf-aa67-10bf23642c60",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/angularjs/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4422a048-62a5-44c3-b9c8-ab72cc744491",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b647883-6d88-4977-8337-885db426cdb9",
+      "comment": "",
+      "command": "store",
+      "target": "Hello there",
+      "targets": [],
+      "value": "testText"
+    }, {
+      "id": "abb2f62d-a17b-412d-a791-3036f734ba14",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${testText}"
+    }, {
+      "id": "caabc20d-d552-4e45-a2f8-d77b2a16ae52",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6978db25-c478-427a-97c7-80100196a003",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "go to gym"
+    }, {
+      "id": "1ca5da68-4b5f-4229-a05b-38724954b058",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3c442617-1dec-4afe-a183-54a9a6186168",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "go shopping"
+    }, {
+      "id": "f534fb27-bb40-42eb-a6cd-52f4b77c7544",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "61d16c52-b690-46ef-b8b9-065867f1e0d1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-scope:nth-child(1) > .view > .ng-binding",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > .view > .ng-binding", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Hello there')]", "xpath:innerText"]
+      ],
+      "value": "${testText}"
+    }, {
+      "id": "f577c9d6-2544-4ee0-ab0d-71994de50324",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ng-scope:nth-child(1) > .view > .ng-binding",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > .view > .ng-binding", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Hello there')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fd89b8a4-4cc5-4e7d-bf74-f0d9f1bfed92",
+    "name": "2. Add 2 more items and mark gym and shopping as done",
+    "commands": [{
+      "id": "62e02bfd-03a9-4c02-807c-55d2adc799ee",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/angularjs/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58bdfc23-414a-48ff-8e08-cb935b0c1ff1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0db9879d-fc8f-4d8b-9ee5-dce63778dc47",
+      "comment": "",
+      "command": "store",
+      "target": "Homework to do ",
+      "targets": [],
+      "value": "ToDoItem"
+    }, {
+      "id": "0a95e941-5349-406b-91d7-3e95f4893aeb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${ToDoItem}"
+    }, {
+      "id": "92745d3e-98aa-4757-82f0-42f3346b4eb8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5d428a74-04eb-4a20-a575-cf27166145b1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "call to granny"
+    }, {
+      "id": "e18ac8c3-cd90-4269-ab40-5b05a834a52a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "910f9dec-f4f3-4fe0-9860-95b6dc3bb6ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > .view > .toggle",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > .view > .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[3]", "xpath:attributes"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b80bbea-e06c-437f-b8de-7dd26db7dc17",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-scope:nth-child(4) > .view > .ng-binding",
+      "targets": [
+        ["css=.ng-scope:nth-child(4) > .view > .ng-binding", "css:finder"],
+        ["xpath=//li[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Homework to do')]", "xpath:innerText"]
+      ],
+      "value": "${ToDoItem}"
+    }, {
+      "id": "c3a12343-a45b-4b63-95a1-69bae50aad1d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ng-scope:nth-child(4) > .view > .ng-binding",
+      "targets": [
+        ["css=.ng-scope:nth-child(4) > .view > .ng-binding", "css:finder"],
+        ["xpath=//li[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Homework to do')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }]
+  }, {
+    "id": "7eec4ad1-364a-42f0-86c5-5eed34c6c296",
+    "name": "3. Check all, check complited, clear completed, back to all",
+    "commands": [{
+      "id": "8ea28804-b633-463c-a8f2-3db1f91d8f79",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/angularjs/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48847ee5-4eee-4a89-a306-42cb882c731e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c63d6824-6459-48e1-a84c-fa6ebe1b9c35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Completed",
+      "targets": [
+        ["linkText=Completed", "linkText"],
+        ["css=.filters > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Completed')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/completed')]", "xpath:href"],
+        ["xpath=//footer/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bf13c54-4a96-4eec-ae70-262b9b02fb3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Active",
+      "targets": [
+        ["linkText=Active", "linkText"],
+        ["css=.filters > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Active')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/active')]", "xpath:href"],
+        ["xpath=//footer/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7944a69c-f1cc-4fa0-8b62-6df1ddbba20d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All",
+      "targets": [
+        ["linkText=All", "linkText"],
+        ["css=.filters > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/')]", "xpath:href"],
+        ["xpath=//footer/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45f8b8e0-f9a6-48cd-abdc-738aa9f2f392",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clear-completed",
+      "targets": [
+        ["css=.clear-completed", "css:finder"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f890dde5-eb07-4f04-bb45-889eafdce855",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Active",
+      "targets": [
+        ["linkText=Active", "linkText"],
+        ["css=.filters > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Active')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/active')]", "xpath:href"],
+        ["xpath=//footer/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccb6ff65-8227-42ea-b972-5446a0aa13fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All",
+      "targets": [
+        ["linkText=All", "linkText"],
+        ["css=.filters > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/')]", "xpath:href"],
+        ["xpath=//footer/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ff439de-e1e0-4885-ae38-c795f3fc0423",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[3]/div/input",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[4]", "xpath:attributes"],
+        ["xpath=//li[3]/div/input", "xpath:position"]
+      ],
+      "value": "css=.ng-scope:nth-child(3) .toggle"
+    }, {
+      "id": "413a5f4b-8139-47d3-80be-f87470b098e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-scope:nth-child(4) > .view > .ng-binding",
+      "targets": [
+        ["css=.ng-scope:nth-child(4) > .view > .ng-binding", "css:finder"],
+        ["xpath=//li[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'call to granny')]", "xpath:innerText"]
+      ],
+      "value": "call to granny"
+    }, {
+      "id": "2de81c4f-82d2-4da4-a952-b294f7b9e02a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ng-scope:nth-child(1) > .view > .ng-binding",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > .view > .ng-binding", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Hello there')]", "xpath:innerText"]
+      ],
+      "value": "Hello there"
+    }]
+  }, {
+    "id": "39e236a5-5064-430d-a23e-a6b7bf2efb28",
+    "name": "4. All active, all as done, check active, clear the list",
+    "commands": [{
+      "id": "d33dc799-96df-4392-8894-0f4c821b20db",
+      "comment": "",
+      "command": "open",
+      "target": "https://todomvc.com/examples/angularjs/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48c15e4b-d3f8-45bd-8453-6deeb7f4facf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36045a52-de92-497c-95da-b69ab3b3ba06",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@type='checkbox'])[3]",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > .view > .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[3]", "xpath:attributes"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": "css=.ng-scope:nth-child(2) > .view > .toggle"
+    }, {
+      "id": "7c349b21-867f-4b92-b8dc-fb08f47340ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(4) .toggle",
+      "targets": [
+        ["css=.ng-scope:nth-child(4) .toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[5]", "xpath:attributes"],
+        ["xpath=//li[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30abe7c1-ff70-409d-a61e-d295ba07ab72",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Completed')]",
+      "targets": [
+        ["linkText=Completed", "linkText"],
+        ["css=.filters > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Completed')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/completed')]", "xpath:href"],
+        ["xpath=//footer/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Completed')]", "xpath:innerText"]
+      ],
+      "value": "linkText=Completed"
+    }, {
+      "id": "23d82ba4-dce0-4f6b-a1e2-bb517a3474e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Active",
+      "targets": [
+        ["linkText=Active", "linkText"],
+        ["css=.filters > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Active')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/active')]", "xpath:href"],
+        ["xpath=//footer/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Active')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bba22ed-3a55-42a4-b843-6ae9bd06c473",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All",
+      "targets": [
+        ["linkText=All", "linkText"],
+        ["css=.filters > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/')]", "xpath:href"],
+        ["xpath=//footer/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2877ac92-ff11-483d-98b5-cb1c1197e550",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle",
+      "targets": [
+        ["css=.toggle", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[2]", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36c5269b-c502-4073-a74a-de43e8a4a6b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clear-completed",
+      "targets": [
+        ["css=.clear-completed", "css:finder"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a3cc33f-fc55-4a35-b34f-8945ff342020",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "empty"
+    }]
+  }],
+  "suites": [{
+    "id": "b54a8110-2481-4cdf-8a20-41865456fa25",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://todomvc.com/", "https://todomvc.com/examples/angularjs/#/"],
+  "plugins": []
+}
